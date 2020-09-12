@@ -23,13 +23,18 @@ body{
   background-color: #FFFCF3;
 }
 
+.beige {
+  background-color: #FFFCF3;
+}
+
 .logo{
   position: absolute;
   width: 100vw;
 }
 
 #logo {
-  margin: 0.5%;
+  height: 4vh;
+  margin: 1.6vh;
 }
 
 .main{
@@ -91,7 +96,6 @@ footer{
 .h728 {
   height: 72.8vh;
   margin-top: 0;
-  background-color: white;
 }
 
 .h20 {
@@ -101,9 +105,9 @@ footer{
 
 #bottom_characters {
   height: 18vh;
-  margin-left: 9vw;
-  position: absolute;
+  margin-left: -35%;
   bottom: 0;
+  position: absolute;
 }
 
 .top125 {
@@ -113,9 +117,8 @@ footer{
   color: #fffcf3;
 }
 
-.full-page-1 {
+.full-page-s {
   height: 92.8vh;
-  background-color: black;
 }
 
 .full-page-hanabi {
@@ -145,6 +148,11 @@ footer{
   margin-top: 20vw;
 }
 
+#charatext1 {
+  width: 75%;
+  margin-top: 10vh;
+}
+
 #hanabitext1m{
   width: 60vw;
   margin-top: 70vw;  
@@ -162,6 +170,11 @@ footer{
 
 #image_center {
   width: 80vw;
+  margin: auto;
+}
+
+#image_center_h {
+  height: 72vh;
   margin: auto;
 }
 
