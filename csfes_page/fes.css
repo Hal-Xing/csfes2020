@@ -5,16 +5,29 @@ body, h1, h2, h3, h4,h5,p, ul, li,span,div{
     padding:0;
 	  color:#2A8648;
     text-align: center;
-    margin: 0 auto;
+    margin: 0, auto;
     font-family: sans-serif;
 }
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
 .left {
   text-align: left;
 }
+
+.center {
+  text-align: center;
+  padding-top: 5vh;
+}
+
 main{
   width: 100%;
   margin: 0;
 }
+
 li {
   list-style-type: none;
 }
@@ -71,16 +84,16 @@ footer{
  flex-direction: column;
 }
 
-/* .center {
+.center {
   text-align: center;
-} */
+}
 
 #underlined {
   text-decoration-line: underline;
 }
 
 .green {
-  background-color: green;
+  background-color: #93B82C;
   /* どんな緑でしょうか */
 }
 
@@ -95,7 +108,7 @@ footer{
 
 .h728 {
   height: 72.8vh;
-  margin-top: 0;
+  margin: 0;
 }
 
 .h20 {
@@ -103,8 +116,47 @@ footer{
   margin: 0;
 }
 
+.left-icon {
+  height: 72.8vh;
+  width: 25vw;
+  margin: 0;
+}
+
+#left-fish {
+  height: 21vh;
+  margin-top: 32vh;
+}
+
+.right-icon {
+  height: 72.8vh;
+  width: 25vw;
+  margin: 0;
+}
+
+#right-spider {
+  height: 70vh;
+  margin-top: 0;
+}
+
+#top-characters {
+  height: 45.36vh;
+  margin-bottom: 10vh;
+}
+
+#left-fish-m {
+  margin: auto;
+  margin-top: 30%;
+  height: 30%;
+}
+
+#right-spider-m {
+  margin: auto;
+  height: 45vh;
+}
+
 #bottom_characters {
-  height: 18vh;
+  max-width: 80vw;
+  max-height: 18vh;
   margin-left: -35%;
   bottom: 0;
   position: absolute;
@@ -121,6 +173,8 @@ footer{
   height: 92.8vh;
 }
 
+
+
 .full-page-hanabi {
   width: 100%;
   height: 151.70703125vw;
@@ -135,12 +189,35 @@ footer{
   background-size: 100% 100%;
 }
 
+.chara-bottom {
+  width: 100vw;
+  height: 279.62529274vw;
+  max-width: 100%;
+  background: black url("images/chara_bottom.svg") no-repeat;
+  background-size: cover;
+}
+
 .full-page {
+  margin: 0;
   height: 100vh;
 }
 
 .flex {
   display: flex;
+}
+
+#partstext1 {
+  margin-top: 5vw;
+  width: 59vw;
+}
+
+#partsimg {
+  margin-top: 6vw;
+  width: 59vw;
+}
+
+#partstext2 {
+  margin-top: 15vw;
 }
 
 #hanabitext1 {
@@ -150,7 +227,11 @@ footer{
 
 #charatext1 {
   width: 75%;
-  margin-top: 10vh;
+}
+
+#charatext2 {
+  width: 75%;
+  margin: auto;
 }
 
 #hanabitext1m{
@@ -176,6 +257,7 @@ footer{
 #image_center_h {
   height: 72vh;
   margin: auto;
+  margin-top: 4vh;
 }
 
 #image_center_m {
@@ -187,6 +269,12 @@ footer{
 #character_text {
   margin-top: 25%;
   width: 85%;
+  margin: auto;
+}
+
+#character_text_m {
+  width: 100%;
+  margin: auto;
 }
 
 .desktop {display: block;}
@@ -194,4 +282,5 @@ footer{
 @media screen and (orientation: portrait) {
   .desktop {display: none;}
   .mobile {display: block;}
+  .chara-bottom {height: 320vw;}
 }
