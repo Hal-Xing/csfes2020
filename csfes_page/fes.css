@@ -190,15 +190,15 @@ footer{
 
 .full-page-hanabi {
   width: 100%;
-  height: 151.70703125vw;
-  background: #1f2e7e url("images/fireworks_desktop.png") no-repeat;
+  height: 225.12265625vw;
+  background: #1f2e7e url("images/fireworks_desktop_new.png") no-repeat;
   background-size: 100% 100%;
 }
 
 .full-page-hanabi-m {
   width: 100%;
-  height: 383.6666666667vw;
-  background: #1f2e7e url("images/fireworks_mobile.png") no-repeat;
+  height: 599.986666667vw;
+  background: #1f2e7e url("images/fireworks_mobile_new.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -266,10 +266,16 @@ footer{
 #image_center {
   width: 80vw;
   margin: auto;
+  margin-bottom: 30vh;
+}
+
+.top10 {
+  margin-top: 10vh;
 }
 
 #image_center_h {
-  height: 72vh;
+  max-width: 80vw;
+  max-height: 80vh;
   margin: auto;
   margin-top: 4vh;
 }
@@ -278,6 +284,7 @@ footer{
   width: 76vw;
   margin: auto;
   margin-top: 4vw;
+  margin-bottom: 15vh;
 }
 
 #character_text {
