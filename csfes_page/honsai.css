@@ -2,11 +2,15 @@
 
 /* CSS Document */
 body, h1, h2, h3, h4,h5,p, ul, li,span,div{
-    padding:0;
-	  color:#2A8648;
-    text-align: center;
-    margin: 0, auto;
-    font-family: sans-serif;
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+
+/* basic settings */
+
+div {
+  width: 100%;
 }
 
 body {
@@ -47,13 +51,13 @@ li {
   margin-top: 0;
 }
 
-header {
+/* header {
   position: sticky;
   top: 0;
   height: 10vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-}
+} */
 
 .center {
   text-align: center;
@@ -68,23 +72,152 @@ header {
   height: 100vh;
 }
 
-.desktop {display: block;}
-.mobile {display: none;}
 
-
-@media screen and (orientation: portrait) {
-  .desktop {display: none;}
-  .mobile {display: block;}
-  .chara-bottom {height: 350vw;}
-  .partstext2 {width: 80vw;}
+body {
+  background-color: #FFFCF3;
 }
 
+
+/* top page moodanime area */
+.moodbuttondsk {
+  position: relative;
+  padding-top: 2vh;
+  max-height: 8vh;
+  float: right;
+  margin-right: 2vw;
+  z-index: 1000;
+}
+
+.moodbuttonmbl {
+  height: 8vh;
+  padding-top: 10vh;
+  margin: auto;
+}
+/* animate moodbutton */
+.moodbuttondsk:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.moodbuttonmbl:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.header8 {
+  height: 12vh;
+}
+
+.moodanime {
+  margin: auto;
+  margin-top: 8vh;
+  width: 67.2vw;
+}
+
+
+/* top page tree area */
+.tree-page {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 227.946582581vw;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.littlebug {
+  position: relative;
+  width: 5vw;
+  z-index: 0;
+  margin-left: 45vw;
+  margin-top: 12vw;
+  animation-name: bug;
+  animation-duration: 3s;
+  animation-delay: -1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bug {
+  0%   {top:-12vw;}
+  30%   {top:-12vw;}
+  50%   {top:0vw;}
+  80%  {top:0vw;}
+}
+
+.treebkgd {
+  position: relative;
+  display: block;
+  flex-shrink: auto;
+  width: 100vw;
+  z-index: 1;
+  /* background-color: red; */
+}
+
+.infotext1 {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: -200vw;
+  width: 47.9297237811vw;
+  z-index: 2;
+  /* background-color: black; */
+}
+
+.infotext2 {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-top: 50vw;
+  width: 44vw;
+  z-index: 3;
+  /* background-color: black; */
+}
+
+/* welcome area */
+.welcome-page {
+  max-width: 100vw;
+  /* display: flex; */
+  overflow: hidden;
+}
+
+.welcomemessage {
+  max-width: 95vw;
+  margin: 25%;
+  size: auto;
+}
+
+.welcomechara {
+  position: relative;
+  width: 95vw;
+  height: auto;
+  margin: auto;
+}
+
+.welcomingbirds {
+  position: relative;
+  top: -33vw;
+  left: -36vw;
+  width: 12vw;
+  animation-name: birds;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes birds {
+  0%   {left:-60vw;}
+  50%  {left:0vw; top: -20vw; transform: rotate(-30deg);}
+  100%  {left:60vw; top: -40vw;}
+}
+
+
+/* all kumo menu settings */
 .overlay {
   display: flex;
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   top: -85vh;
   left: 0;
   background-color: rgba(255, 255, 255, 0);
@@ -94,84 +227,57 @@ header {
 
 .kumoleft {
   height: 100vh;
-  width: 20vh;
+  width: 15vh;
   position: fixed;
-  /* background-color: black; */
 }
 
-#kumoitself {
+.kumoitself {
+  height: 90vh;
   padding-top: 5vh;
+  margin-left: 0.5vw;
+  transition: 0.2s;
+}
+
+.kumoitself:hover {
+  -webkit-transform: translate(0, -1.5vh);
+  transform: translate(0, -1.5vh);  
 }
 
 .nav {
   position: relative;
-  height: 100%;
-  width: 90%;
+  height: 70vh;
+  width: 80vw;
   text-align: left;
-  margin-left: 20vh;
+  margin-left: 15vw;
   margin-top: 10vh;
-  /* background-color: white; */
+  margin-bottom: 20vh;
 }
 
 .nav a {
+  max-height: 10vh;
+  max-width: 70vw;
   padding: 1vh;
   display: block;
   transition: 0.3s;
 }
 
-/* .overlay {
-  height: 0%
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #FFFCF3;
-  overflow-y: hidden;
-  transition: 0.5s;
+.navlogo {
+  max-height: 10vh;
+  max-width: 70vw;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 90%;
-  text-align: left;
-  margin-top: 0;
-  margin-left: 10%;
+.nav a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+.desktop {display: block;}
+.mobile {display: none;}
 
-.overlay {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-.closebtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+@media screen and (orientation: portrait) {
+  .welcomemessage {margin: 0; margin-top: 20vw; margin-bottom: 20vw;}
+  .moodanime {width: 92vw; margin-top: 20vh;}
+  .desktop {display: none;}
+  .mobile {display: block;}
 }
