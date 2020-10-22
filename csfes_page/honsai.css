@@ -46,8 +46,9 @@ body{
 }
 
 #logo {
-  height: 4vh;
+  height: 10vh;
   margin: 1.6vh;
+  margin-top: 0;
 }
 
 .main{
@@ -68,9 +69,11 @@ body{
 }
 
 header {
-  height: 7.2vh;
+  position: sticky;
+  top: 0;
+  height: 10vh;
   width: 100%;
-  background-color: #FFFCF3;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 footer{
